@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code URL Extractor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>QR Code URL Extractor</h1>
+        <div class="instructions">
+            <p>Copy a QR code image to your clipboard (⌘+C), then click the button below:</p>
+        </div>
+        <button id="paste-button">Paste QR Code from Clipboard</button>
+        <div class="preview-container">
+            <canvas id="preview" width="300" height="300"></canvas>
+        </div>
+        <div class="result-container">
+            <h2>Extracted URL:</h2>
+            <div id="result">No QR code detected yet</div>
+            <a id="url-link" href="#" target="_blank" style="display: none;">Open URL</a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
